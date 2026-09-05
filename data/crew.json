@@ -1,0 +1,148 @@
+[
+  {
+    "id": "luffy",
+    "name": "Monkey D. Luffy",
+    "epithet": "Straw Hat Luffy",
+    "role": "Captain",
+    "bounty": 3000000000,
+    "devilFruit": {
+      "name": "Hito Hito no Mi, Model: Nika",
+      "type": "Mythical Zoan",
+      "awakened": true
+    },
+    "haki": ["Conqueror's", "Armament", "Observation"],
+    "dream": "To find the One Piece and become King of the Pirates",
+    "quote": "If you don't take risks, you can't create a future!",
+    "origin": "East Blue (Foosha Village)",
+    "image": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "zoro",
+    "name": "Roronoa Zoro",
+    "epithet": "Pirate Hunter",
+    "role": "Swordsman",
+    "bounty": 1111000000,
+    "devilFruit": null,
+    "haki": ["Conqueror's", "Armament", "Observation"],
+    "dream": "To become the World's Greatest Swordsman",
+    "quote": "Scars on the back are a swordsman's shame.",
+    "origin": "East Blue (Shimotsuki Village)",
+    "image": "https://images.unsplash.com/photo-1563089145-599997674d42?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "nami",
+    "name": "Nami",
+    "epithet": "Cat Burglar",
+    "role": "Navigator",
+    "bounty": 366000000,
+    "devilFruit": null,
+    "haki": [],
+    "dream": "To draw a complete map of the entire world",
+    "quote": "Life is like a pencil that will surely run out, but will leave the beautiful writing of life.",
+    "origin": "East Blue (Cocoyasi Village)",
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "usopp",
+    "name": "Usopp",
+    "epithet": "God Usopp",
+    "role": "Sniper",
+    "bounty": 500000000,
+    "devilFruit": null,
+    "haki": ["Observation"],
+    "dream": "To become a brave warrior of the sea",
+    "quote": "There comes a time when a man has to stand and fight!",
+    "origin": "East Blue (Syrup Village)",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "sanji",
+    "name": "Sanji (Vinsmoke)",
+    "epithet": "Stealth Black / Black Leg",
+    "role": "Cook",
+    "bounty": 1032000000,
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "dream": "To find the All Blue ocean",
+    "quote": "Men who can't wipe away the tears from a woman's eyes aren't real men.",
+    "origin": "North Blue (Germa Kingdom)",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "chopper",
+    "name": "Tony Tony Chopper",
+    "epithet": "Cotton Candy Lover",
+    "role": "Doctor",
+    "bounty": 1000,
+    "devilFruit": {
+      "name": "Hito Hito no Mi (Human-Human Fruit)",
+      "type": "Zoan",
+      "awakened": false
+    },
+    "haki": [],
+    "dream": "To become a doctor capable of curing any disease",
+    "quote": "I am a monster, but I will become a doctor who can cure anything!",
+    "origin": "Grand Line (Drum Island)",
+    "image": "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "robin",
+    "name": "Nico Robin",
+    "epithet": "Devil Child",
+    "role": "Archaeologist",
+    "bounty": 930000000,
+    "devilFruit": {
+      "name": "Hana Hana no Mi (Flower-Flower Fruit)",
+      "type": "Paramecia",
+      "awakened": false
+    },
+    "haki": ["Armament"],
+    "dream": "To uncover the True History (Rio Poneglyph) of the Void Century",
+    "quote": "I want to live! Take me out to the sea with you!",
+    "origin": "West Blue (Ohara)",
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "franky",
+    "name": "Franky (Cutty Flam)",
+    "epithet": "Cyborg Franky / Iron Man",
+    "role": "Shipwright",
+    "bounty": 394000000,
+    "devilFruit": null,
+    "haki": [],
+    "dream": "To build and sail a dream ship (Thousand Sunny) to the ends of the earth",
+    "quote": "SUPER! Existing can never be a crime!",
+    "origin": "South Blue (Water 7)",
+    "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "brook",
+    "name": "Brook",
+    "epithet": "Soul King",
+    "role": "Musician",
+    "bounty": 383000000,
+    "devilFruit": {
+      "name": "Yomi Yomi no Mi (Revive-Revive Fruit)",
+      "type": "Paramecia",
+      "awakened": true
+    },
+    "haki": [],
+    "dream": "To fulfill his promise and reunite with Laboon at Reverse Mountain",
+    "quote": "Yo-ho-ho-ho! Even if I lose my flesh and bones, my promise remains!",
+    "origin": "West Blue",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "jinbe",
+    "name": "Jinbe",
+    "epithet": "Knight of the Sea",
+    "role": "Helmsman",
+    "bounty": 1100000000,
+    "devilFruit": null,
+    "haki": ["Armament", "Observation"],
+    "dream": "To see fish-men and humans live in peace and harmony under the sun",
+    "quote": "It is not death you should fear, but dishonor in failure to protect your friends!",
+    "origin": "Grand Line (Fish-Man Island)",
+    "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&auto=format&fit=crop&q=80"
+  }
+]

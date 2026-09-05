@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="One Piece Grand Line Logbook & Bounty Tracker - Learn Git and GitHub with the Straw Hat Pirates!">
+  <title>One Piece: Grand Line Logbook & Git Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☠️</text></svg>">
+</head>
+<body>
+
+  <!-- Main Navigation & Header -->
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="logo-group">
+          <div class="jolly-roger-icon">☠️</div>
+          <div class="title-wrap">
+            <h1>GRAND LINE LOGBOOK</h1>
+            <p>Straw Hat Pirate Fleet & Git Quest</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="sfx-toggle" class="btn btn-outline btn-sm" title="Toggle Sound FX">
+            🔊 Sound: ON
+          </button>
+          <button id="btn-open-recruit" class="btn btn-primary">
+            <span>+</span> Recruit Pirate
+          </button>
+        </div>
+      </div>
+
+      <!-- Stats Ribbon -->
+      <div class="stats-ribbon">
+        <div class="stat-item">
+          <div class="stat-icon">💰</div>
+          <div class="stat-info">
+            <div class="stat-label">Total Fleet Bounty</div>
+            <div class="stat-val" id="total-bounty-val">฿ 0</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">👥</div>
+          <div class="stat-info">
+            <div class="stat-label">Active Crew</div>
+            <div class="stat-val" id="crew-count-val">0 Pirates</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">👑</div>
+          <div class="stat-info">
+            <div class="stat-label">Fleet Rank</div>
+            <div class="stat-val">Yonko Fleet</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">⚓</div>
+          <div class="stat-info">
+            <div class="stat-label">Flagship</div>
+            <div class="stat-val">Thousand Sunny</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs">
+        <button class="nav-tab active" data-tab="bounties">
+          <span>📜</span> Bounty Board
+        </button>
+        <button class="nav-tab" data-tab="devil-fruits">
+          <span>🍎</span> Devil Fruit Archive
+        </button>
+        <button class="nav-tab" data-tab="git-quest">
+          <span>🗺️</span> Git & GitHub Quest
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container" style="padding-top: 24px;">
+
+    <!-- TAB 1: BOUNTY BOARD -->
+    <section id="tab-bounties" class="tab-content active">
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search pirate name, epithet, or origin...">
+        </div>
+
+        <div class="filter-group" id="filter-group">
+          <button class="filter-chip active" data-role="all">All Crew</button>
+          <button class="filter-chip" data-role="Captain">Captain</button>
+          <button class="filter-chip" data-role="Swordsman">Swordsman</button>
+          <button class="filter-chip" data-role="Navigator">Navigator</button>
+          <button class="filter-chip" data-role="Cook">Cook</button>
+          <button class="filter-chip" data-role="Doctor">Doctor</button>
+          <button class="filter-chip" data-role="Sniper">Sniper</button>
+        </div>
+      </div>
+
+      <!-- Bounty Grid -->
+      <div class="bounty-grid" id="bounty-grid">
+        <!-- Injected via app.js -->
+      </div>
+    </section>
+
+    <!-- TAB 2: DEVIL FRUITS -->
+    <section id="tab-devil-fruits" class="tab-content">
+      <div class="toolbar">
+        <h2 style="font-family: var(--font-heading); color: var(--accent-gold-light); font-size: 1.5rem;">
+          Encyclopaedia of Devil Fruits (Akuma no Mi)
+        </h2>
+      </div>
+      <div class="devil-fruit-grid" id="devil-fruit-grid">
+        <!-- Injected via app.js -->
+      </div>
+    </section>
+
+    <!-- TAB 3: GIT & GITHUB QUEST -->
+    <section id="tab-git-quest" class="tab-content">
+      <div class="quest-container">
+        <div class="quest-header">
+          <h2>Grand Line Navigation: Master Git & GitHub</h2>
+          <p>Embark on 6 pirate trials to master version control from East Blue to the New World. Follow each trial in your terminal!</p>
+        </div>
+
+        <div class="quest-timeline">
+          <!-- Trial 1 -->
+          <div class="quest-step">
+            <div class="step-number">1</div>
+            <div class="step-body">
+              <div class="step-title">⛵ Island 1: Foosha Village — Initializing Your Voyage</div>
+              <div class="step-desc">Initialize your local Git repository and create your first pirate log commit.</div>
+              <div class="code-block">
+                git init<br>
+                git status<br>
+                git add .<br>
+                git commit -m "feat: set sail with Straw Hat crew roster"
+                <button onclick="copyCode(this)">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trial 2 -->
+          <div class="quest-step">
+            <div class="step-number">2</div>
+            <div class="step-body">
+              <div class="step-title">🧭 Island 2: Loguetown — Checking Your Log Pose History</div>
+              <div class="step-desc">Inspect your commit history and see the differences in your code changes.</div>
+              <div class="code-block">
+                git log --oneline --graph --decorate<br>
+                git diff
+                <button onclick="copyCode(this)">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trial 3 -->
+          <div class="quest-step">
+            <div class="step-number">3</div>
+            <div class="step-body">
+              <div class="step-title">🌿 Island 3: Water 7 — Creating New Feature Branches</div>
+              <div class="step-desc">Create a separate branch to build an upgrade for your ship or add a new nakama.</div>
+              <div class="code-block">
+                git switch -c feature/sunny-coupe-de-burst<br>
+                # Make edits to files...<br>
+                git add .<br>
+                git commit -m "feat: add Coupe de Burst emergency escape"
+                <button onclick="copyCode(this)">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trial 4 -->
+          <div class="quest-step">
+            <div class="step-number">4</div>
+            <div class="step-body">
+              <div class="step-title">⚔️ Island 4: Marineford — Conquering Merge Conflicts</div>
+              <div class="step-desc">Merge your feature branch back into the main timeline and resolve any conflicting bounties.</div>
+              <div class="code-block">
+                git switch main<br>
+                git merge feature/sunny-coupe-de-burst
+                <button onclick="copyCode(this)">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trial 5 -->
+          <div class="quest-step">
+            <div class="step-number">5</div>
+            <div class="step-body">
+              <div class="step-title">🌐 Island 5: Red Line — Connecting to GitHub (Remote Den Den Mushi)</div>
+              <div class="step-desc">Link your local ship repository to GitHub and push your code to the cloud world.</div>
+              <div class="code-block">
+                git remote add origin https://github.com/YOUR_USERNAME/one-piece-git-quest.git<br>
+                git branch -M main<br>
+                git push -u origin main
+                <button onclick="copyCode(this)">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trial 6 -->
+          <div class="quest-step">
+            <div class="step-number">6</div>
+            <div class="step-body">
+              <div class="step-title">🚀 Island 6: Egghead — Free Live Deployment with GitHub Pages</div>
+              <div class="step-desc">Publish your One Piece app live for the entire world to view through GitHub repository Settings > Pages!</div>
+              <div class="code-block">
+                # In your GitHub repo: Go to Settings -> Pages -> Source: Deploy from branch (main / root) -> Save!
+                <button onclick="copyCode(this)">Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RECRUIT PIRATE MODAL -->
+  <div class="modal-overlay" id="recruit-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <h2 style="font-family: var(--font-heading); color: var(--accent-gold-light); margin-bottom: 8px;">
+        Recruit New Nakama
+      </h2>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px;">
+        Issue a new official bounty poster for the Straw Hat Fleet.
+      </p>
+
+      <form id="recruit-form">
+        <div class="form-group">
+          <label for="recruit-name">Pirate Name</label>
+          <input type="text" id="recruit-name" required placeholder="e.g. Trafalgar D. Water Law">
+        </div>
+
+        <div class="form-group">
+          <label for="recruit-epithet">Epithet / Title</label>
+          <input type="text" id="recruit-epithet" required placeholder="e.g. Surgeon of Death">
+        </div>
+
+        <div class="form-group">
+          <label for="recruit-role">Ship Role</label>
+          <select id="recruit-role" required>
+            <option value="Captain">Captain / Allied Captain</option>
+            <option value="Swordsman">Swordsman</option>
+            <option value="Navigator">Navigator</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Cook">Cook</option>
+            <option value="Sniper">Sniper</option>
+            <option value="Shipwright">Shipwright</option>
+            <option value="Musician">Musician</option>
+            <option value="Helmsman">Helmsman</option>
+            <option value="Tactician">Tactician</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="recruit-bounty">Bounty (Berry ฿)</label>
+          <input type="number" id="recruit-bounty" required min="100" placeholder="e.g. 3000000000">
+        </div>
+
+        <div class="form-group">
+          <label for="recruit-quote">Pirate Quote / Dream</label>
+          <input type="text" id="recruit-quote" placeholder="e.g. The weak don't get to decide anything.">
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;">
+          Issue Bounty Poster
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- CHARACTER DOSSIER MODAL -->
+  <div class="modal-overlay" id="dossier-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="dossier-close-btn">&times;</button>
+      <div class="detail-modal-body" id="dossier-body">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span id="toast-icon">⚡</span>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>One Piece Grand Line Logbook & Git Explorer • Made for aspiring software pirates 🏴‍☠️</p>
+      <p style="margin-top: 8px; color: var(--text-dim); font-size: 0.75rem;">
+        Check out <a href="GIT_PRACTICE_GUIDE.md" target="_blank">GIT_PRACTICE_GUIDE.md</a> for full terminal challenges!
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
